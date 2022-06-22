@@ -1,0 +1,32 @@
+:root {
+    /* These values can be overriden by specifying different custom properties on the body using JavaScript. */
+    --brand-hue: 162;
+    --brand-saturation: 78%;
+    --brand-lightness: 50%;
+}
+
+body {
+    --color-surface-50: hsl(var(--brand-hue), 5%, 100%);
+    --color-surface-100: hsl(var(--brand-hue), 5%, 95%);
+    --color-surface-200: hsl(var(--brand-hue), 15%, 88%);
+    --color-surface-300: hsl(var(--brand-hue), 30%, 81%);
+    --color-surface-400: hsl(var(--brand-hue), 40%, 67%);
+    --color-surface-500: hsl(var(--brand-hue), 50%, 53%);
+    --color-surface-600: hsl(var(--brand-hue), 50%, 48%);
+    --color-surface-700: hsl(var(--brand-hue), 40%, 40%);
+    --color-surface-800: hsl(var(--brand-hue), 25%, 31%);
+    --color-surface-900: hsl(var(--brand-hue), 15%, 26%);
+    --color-surface-950: hsl(var(--brand-hue), 10%, 5%);
+
+    --color-verse-50: hsl(var(--brand-hue), 5%, 100%);
+    --color-verse-100: hsl(var(--brand-hue), 5%, 95%);
+    --color-verse-200: hsl(var(--brand-hue), 15%, 88%);
+    --color-verse-300: hsl(var(--brand-hue), 30%, 81%);
+    --color-verse-400: hsl(var(--brand-hue), 40%, 67%);
+    --color-verse-500: hsl(var(--brand-hue), 50%, 53%);
+    --color-verse-600: hsl(var(--brand-hue), 50%, 48%);
+    --color-verse-700: hsl(var(--brand-hue), 40%, 40%);
+    --color-verse-800: hsl(var(--brand-hue), 25%, 31%);
+    --color-verse-900: hsl(var(--brand-hue), 15%, 26%);
+    --color-verse-950: hsl(var(--brand-hue), 10%, 5%);
+}
