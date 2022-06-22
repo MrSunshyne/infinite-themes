@@ -40,9 +40,7 @@
                   </button>
                 </div>
               </TransitionChild>
-              <div class="flex-shrink-0 px-4 flex items-center">
-                <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/easywire-logo-purple-600-mark-gray-900-text.svg" alt="Easywire" />
-              </div>
+              
               <div class="mt-5 flex-1 h-0 overflow-y-auto">
                 <nav class="h-full flex flex-col">
                   <div class="space-y-1">
@@ -72,8 +70,8 @@
     <div class="hidden md:flex md:w-64 md:flex-col md:fixed md:inset-y-0">
       <!-- Sidebar component, swap this element with another sidebar if you like -->
       <nav class="bg-gray-50 border-r border-gray-200 pt-5 pb-4 flex flex-col flex-grow overflow-y-auto">
-        <div class="flex-shrink-0 px-4 flex items-center">
-          <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/easywire-logo-purple-600-mark-gray-900-text.svg" alt="Easywire" />
+        <div class="flex-shrink-0 px-4 flex items-center font-bold text-2xl text-surface-600">
+          Easywire
         </div>
         <div class="flex-grow mt-5">
           <div class="space-y-1">
