@@ -9,9 +9,9 @@ const count = ref(0)
 </script>
 
 <template>
-  <h1>{{ msg }}</h1>
+  <h1 class="">{{ msg }}</h1>
 
-  <p>
+  <p class="bg-red-500">
     Recommended IDE setup:
     <a href="https://code.visualstudio.com/" target="_blank">VS Code</a>
     +
