@@ -3,9 +3,12 @@
     --brand-hue: 162;
     --brand-saturation: 78%;
     --brand-lightness: 50%;
+
+    --dark-threshold: 25%;
+
 }
 
-body {
+body[color-scheme="light"] {
     --color-surface-50: hsl(var(--brand-hue), 5%, 100%);
     --color-surface-100: hsl(var(--brand-hue), 5%, 95%);
     --color-surface-200: hsl(var(--brand-hue), 15%, 88%);
@@ -29,4 +32,34 @@ body {
     --color-verse-800: hsl(var(--brand-hue), 25%, 31%);
     --color-verse-900: hsl(var(--brand-hue), 15%, 26%);
     --color-verse-950: hsl(var(--brand-hue), 10%, 5%);
+}
+
+body[color-scheme="dark"] {
+    --color-surface-50: hsl(var(--brand-hue), 11%, calc((var(--dark-threshold) * -1) + 45%));
+    --color-surface-100: hsl(var(--brand-hue), 11%, calc((var(--dark-threshold) * -1) + 40%));
+    --color-surface-200: hsl(var(--brand-hue), 11%, calc((var(--dark-threshold) * -1) + 35%));
+    --color-surface-300: hsl(var(--brand-hue), 11%, calc((var(--dark-threshold) * -1) + 30%));
+    --color-surface-400: hsl(var(--brand-hue), 10%, calc((var(--dark-threshold) * -1) + 25%));
+    --color-surface-500: hsl(var(--brand-hue), 10%, calc((var(--dark-threshold) * -1) + 20%));
+    --color-surface-600: hsl(var(--brand-hue), 8%, calc((var(--dark-threshold) * -1) + 15%));
+    --color-surface-700: hsl(var(--brand-hue), 8%, calc((var(--dark-threshold) * -1) + 10%));
+    --color-surface-800: hsl(var(--brand-hue), 7%, calc((var(--dark-threshold) * -1) + 5%));
+    --color-surface-900: hsl(var(--brand-hue), 7%, calc((var(--dark-threshold) * -1) + 5%));
+    --color-surface-950: hsl(var(--brand-hue), 7%, calc((var(--dark-threshold) * -1) + 0%));
+
+    --color-verse-50: hsl(var(--brand-hue), 11%, calc((var(--dark-threshold)) + 85%));
+    --color-verse-100: hsl(var(--brand-hue), 11%, calc((var(--dark-threshold)) + 80%));
+    --color-verse-200: hsl(var(--brand-hue), 11%, calc((var(--dark-threshold)) + 75%));
+    --color-verse-300: hsl(var(--brand-hue), 11%, calc((var(--dark-threshold)) + 70%));
+    --color-verse-400: hsl(var(--brand-hue), 10%, calc((var(--dark-threshold)) + 65%));
+    --color-verse-500: hsl(var(--brand-hue), 10%, calc((var(--dark-threshold)) + 60%));
+    --color-verse-600: hsl(var(--brand-hue), 8%, calc((var(--dark-threshold)) + 55%));
+    --color-verse-700: hsl(var(--brand-hue), 8%, calc((var(--dark-threshold)) + 50%));
+    --color-verse-800: hsl(var(--brand-hue), 7%, calc((var(--dark-threshold)) + 45%));
+    --color-verse-900: hsl(var(--brand-hue), 7%, calc((var(--dark-threshold)) + 45%));
+    --color-verse-950: hsl(var(--brand-hue), 7%, calc((var(--dark-threshold)) + 40%));
+}
+
+html, body, #app {
+    min-height: 100vh;
 }
